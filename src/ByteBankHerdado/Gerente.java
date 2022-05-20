@@ -16,10 +16,14 @@ public class Gerente extends Funcionario {
 			return false;
 		}
 	}
-	// chamando o metodo getbonificação da classe mãe para não ter que reescreve-lo mesmo que ele seja modificado.
+
+	// chamando o metodo getbonificação da classe mãe para não ter que reescreve-lo
+	// mesmo que ele seja modificado.
 	public double getBonificacao() {
-		return super.getBonificacao() + super.getSalario();// É A INDICAÇÃO QUE SALARIO VEM DA SUPER CLASSE OU CLASSE MÃE (EM
-													// CLASSE FILHA TROCAMOS O this POR super)
+		System.out.println("Chamando o método de bonificacao do gerente!");
+		return super.getBonificacao() + super.getSalario();
 	}
 
+	// É A INDICAÇÃO QUE SALARIO VEM DA SUPER CLASSE OU CLASSE MÃE (EM CLASSE FILHA
+	// TROCAMOS O this POR super)
 }
